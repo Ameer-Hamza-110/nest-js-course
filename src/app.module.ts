@@ -7,9 +7,10 @@ import { ProductController } from './product/product.controller.js';
 import { ProductModule } from './product/product.module.js';
 import { EmployeeModule } from './employee/employee.module.js';
 import { CategoryModule } from './category/category.module.js';
+import { StudentModule } from './student/student.module.js';
 
 @Module({
-  imports: [ProductModule, EmployeeModule, CategoryModule],
+  imports: [ProductModule, EmployeeModule, CategoryModule, StudentModule],
   controllers: [AppController, UserController, ProductController],
   providers: [AppService, ProductService],
 })
